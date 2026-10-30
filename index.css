@@ -1,79 +1,104 @@
-.caja1 {
-    background-color: #CFFEC5;
+.container-fluid {
+    padding-top: 20px;
+}
+
+.row {
+    color: #17212d;
+}
+
+.row > div {
     height: 100px;
 }
 
-.caja2 {
-    background-color: #7AC654;
-    height: 100px;
+.barra-menu {
+    height: 16px;
+    background-color: #334155;
 }
 
-.caja3 {
-    background-color: #122C0A;
-    height: 100px;
+.caja1 { background-color: #D9F0FF; }
+.caja2 { background-color: #A8D8F0; }
+.caja3 { background-color: #76B7E2; }
+.caja4 { background-color: #1B6286; }
+.caja5 { background-color: #FDE2E4; }
+.caja6 { background-color: #F9BEC7; }
+.caja7 { background-color: #E5989B; }
+.caja8 { background-color: #A75566; }
+.caja9 { background-color: #E9E0FF; }
+.caja10 { background-color: #C4B5FD; }
+.caja11 { background-color: #A78BFA; }
+.caja12 { background-color: #6D28D9; }
+.caja13 { background-color: #DCFCE7; }
+.caja14 { background-color: #86EFAC; }
+.caja15 { background-color: #22C55E; }
+.caja16 { background-color: #15803D; }
+
+.caja4, .caja8, .caja12, .caja16 {
+    color: #fff;
 }
 
-.caja4 {
-    background-color: #D597E7;
-    height: 100px;
+/* Celular: 2 / 1 / 3 / 2 / 4 cajas por fila. */
+.caja1, .caja2,
+.caja7, .caja8 {
+    width: 50%;
 }
 
-.caja5 {
-    background-color: #5C1868;
-    height: 100px;
+.caja4, .caja5, .caja6 {
+    width: 33.333333%;
 }
 
-.caja6 {
-    background-color: rgb(144, 62, 144);
-    height: 100px;
+.caja9, .caja10, .caja11, .caja12 {
+    width: 25%;
 }
 
-.caja7 {
-    background-color: pink;
-    height: 100px;
+.caja13, .caja14, .caja15, .caja16 {
+    display: none;
 }
 
-.caja8 {
-    background-color: cyan;
-    height: 100px;
+/* Tableta: 1/4 + 3/4, cuatro cuartos y tres pares de mitades. */
+@media (min-width: 768px) {
+    .caja1, .caja3, .caja4, .caja5, .caja6 {
+        width: 25%;
+    }
+
+    .caja2 {
+        width: 75%;
+    }
+
+    .caja7, .caja8, .caja9, .caja10, .caja11, .caja12 {
+        width: 50%;
+    }
 }
 
-.caja9 {
-    background-color: brown;
-    height: 100px;
-}
+/* PC: cuatro cuartos, una fila completa, 3 / 4 / 2 / 2. */
+@media (min-width: 1200px) {
+    .barra-menu {
+        display: none;
+    }
 
-.caja10 {
-    background-color: gray;
-    height: 100px;
-}
+    .caja1, .caja2, .caja3, .caja4,
+    .caja7, .caja8, .caja9, .caja10 {
+        width: 25%;
+    }
 
-.caja11 {
-    background-color: #529597;
-    height: 100px;
-}
+    .row > .caja1, .row > .caja2,
+    .row > .caja3, .row > .caja4 {
+        height: 30px;
+    }
 
-.caja12 {
-    background-color: coral;
-    height: 100px;
-}
+    .caja5 {
+        width: 100%;
+    }
 
-.caja13 {
-    background-color: #687EAD;
-    height: 100px;
-}
+    .caja6 {
+        width: 50%;
+    }
 
-.caja14 {
-    background-color: #D2FFE4;
-    height: 100px;
-}
+    .caja11, .caja12 {
+        width: 25%;
+    }
 
-.caja15 {
-    background-color: violet;
-    height: 100px;
-}
-
-.caja16 {
-    background-color: teal;
-    height: 100px;
+    .caja13, .caja14, .caja15, .caja16 {
+        display: block;
+        width: 50%;
+    }
 }
